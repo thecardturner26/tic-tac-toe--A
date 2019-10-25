@@ -1,0 +1,24 @@
+
+
+tr {
+    /* border: 2px solid blue; */
+}
+
+td {
+    width: 100px;
+    height: 100px;
+  }
+
+.middle_block {
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+}
+
+.hz {
+    border-top: 2px solid blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+
+.center {
+    border: 2px solid blueviolet;
+}
