@@ -1,5 +1,14 @@
 
 
+header {
+    width: 100%;
+    font-size: 2rem;
+    background-color: #9873c9;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+  }
+
 tr {
     /* border: 2px solid blue; */
 }
@@ -21,4 +30,17 @@ td {
 
 .center {
     border: 2px solid blueviolet;
+}
+
+
+.players {
+    font-size: 1rem;
+  font-weight: bold;
+  padding: .7rem;
+  margin-top: 2rem;
+  border: 2px solid grey;
+  color: grey;
+  border-radius: .2rem;
+  outline: none;
+  cursor: pointer;
 }
