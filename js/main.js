@@ -1,5 +1,6 @@
 /*----- constants -----*/
-const CHAC = ['X', 'O'];
+let player1 = "X"
+let player2 = "O"
 
 
 
@@ -11,25 +12,31 @@ let X, O;
 //const blockEl = document.getElementsByClassName('block');
 
 
-document.getElementsByClassName('block')
+ const box = document.getElementsByClassName("block")
 
 /*----- event listeners -----*/
 
 
-    addEventListener('click', handleBlockClick);
+box.addEventListener("click", handleBlockClick);
 
 
 
 /*----- functions -----*/
 
-function handleBlockClick(evt) {
-    let X = evt.target.textContent;
-        document.getElementsByClassName('block');
+// function handleBlockClick(evt) {
+//     let X = evt.target.textContent;
+//         document.getElementsByClassName('block');
       
-        console.log(evt)
-        this.textContent = "X"
-    return ;
+//         console.log(evt)
+//         this.textContent = "X"
+//     return ;
+// }
 
-
+function handleBlockClick() {
+    if (this.clasName = "played") {
+        this.textContent = 'X';
+        return;
+        
+    }
 }
 
