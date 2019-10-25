@@ -22,7 +22,13 @@ let box = document.getElementsByClassName("block");
 
 
 /*----- functions -----*/
-
+function checkForWinner() {
+    //need at least four moves to check for a winner
+    if (movesMade > 4) {
+        var sqr = $('.square');
+        //research why we need call here!
+        var moves = Array.prototype.slice.call($(".square"));
+        var results = moves.map(function(square) { return square.innerHTML; });
 
 
 
