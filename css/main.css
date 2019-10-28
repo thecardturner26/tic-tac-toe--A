@@ -42,3 +42,7 @@ td {
   outline: none;
   cursor: pointer;
 }
+
+.block {
+    background-color: blueviolet;
+}
