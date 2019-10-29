@@ -24,6 +24,7 @@ const sqr6 = document.getElementById('q6');
 const sqr7 = document.getElementById('q7');
 const sqr8 = document.getElementById('q8');
 const sqr9 = document.getElementById('q9');
+const messageEl = document.querySelector('h2');
 
 var xreset = document.getElementsByClassName('xplayed');
 var oreset = document.getElementsByClassName('oplayed');
@@ -82,9 +83,8 @@ sqr9.addEventListener("click", play);
 
 
         function checkWin(){
-            if
-            (sqr1.textContent("X") == sqr2.textContent("X") == sqr3.textContent("X"))  {
-                alert("Win")
+            if(sqr1.textContent("X") == sqr2.textContent("X") == sqr3.textContent("X"))  {
+                messageEl.textContent = 'Congrats! You guessed the word!'
             }
             // else if (
             //   sqr4.textContent === "X" &&
