@@ -56,6 +56,7 @@ sqr9.addEventListener("click", play);
 //         var results = moves.map(function(square) { return square.innerHTML; });
 //     }}
 
+
     function play(){
         if (this.className == "oplayed"){
             return
@@ -74,33 +75,32 @@ sqr9.addEventListener("click", play);
             xArray.push(this.id)
             this.className = "xplayed"
         }
-            render()
+            
             return;
 
         }
 
 
         function checkWin(){
-            if(sqr1.textContent === "X" &&
-              sqr2.textContent === "X" &&
-              sqr3.textContent === "X"
-            )  {
+            if
+            (sqr1.textContent("X") == sqr2.textContent("X") == sqr3.textContent("X"))  {
                 alert("Win")
             }
-            else if (
-              sqr4.textContent === "X" &&
-              sqr5.textContent === "X" &&
-              sqr6.textContent === "X"
-            )  {
-                alert("Win")
-            }
-             else if (
-              sqr7.textContent === "X" &&
-              sqr8.textContent === "X" &&
-              sqr9.textContent === "X"
-            )  {
-                alert("Win")
-            }
+            // else if (
+            //   sqr4.textContent === "X" &&
+            //   sqr5.textContent === "X" &&
+            //   sqr6.textContent === "X"
+            // )  {
+            //     alert("Win")
+            // }
+            //  else if (
+            //   sqr7.textContent === "X" &&
+            //   sqr8.textContent === "X" &&
+            //   sqr9.textContent === "X"
+            // )  {
+            //     alert("Win")
+            // }
+            // return;
 
           }
 
@@ -118,17 +118,42 @@ sqr9.addEventListener("click", play);
 
 ////////////////////////////////////////////////////
 
-function checkForWinner() {
-    //need at least four moves to check for a winner
-    if (movesMade > 4) {
-        var sqr = $('.square');
-        //research why we need call here!
-        var moves = Array.prototype.slice.call($(".sqr"));
-        var results = moves.map(function(square) { return square.innerHTML; });
-    }}
+// function checkForWinner() {
+//     //need at least four moves to check for a winner
+//     if (movesMade > 4) {
+//         var sqr = $('.square');
+//         //research why we need call here!
+//         var moves = Array.prototype.slice.call($(".sqr"));
+//         var results = moves.map(function(square) { return square.innerHTML; });
+//     }}
 
 
 
+
+// function checkWin(){
+//     if
+//     (sqr1.textContent === "X" &&
+//       sqr2.textContent === "X" &&
+//       sqr3.textContent === "X")  {
+//         alert("Win")
+//     }
+//     else if (
+//       sqr4.textContent === "X" &&
+//       sqr5.textContent === "X" &&
+//       sqr6.textContent === "X"
+//     )  {
+//         alert("Win")
+//     }
+//      else if (
+//       sqr7.textContent === "X" &&
+//       sqr8.textContent === "X" &&
+//       sqr9.textContent === "X"
+//     )  {
+//         alert("Win")
+//     }
+//     return;
+
+//   }
 
 
 
