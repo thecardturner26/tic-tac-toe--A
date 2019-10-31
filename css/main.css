@@ -1,15 +1,29 @@
 
 
 header {
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
     font-size: 2rem;
-    background-color: #9873c9;
     padding: 1rem;
     color: white;
     text-align: center;
   }
+body {
+    background-color: #5C6BC0;
+}
 
- 
+
+section {
+  align-items: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+button {
+  align-self: center;
+}
 
 td {
     width: 100px;
@@ -45,5 +59,5 @@ td {
 }
 
 .block {
-    background-color: blueviolet;
+    background-color: #4FC3F7;
 }
