@@ -12,12 +12,12 @@ let oArray = [];
 //var box = document.getElementsByClassName('.block');
 /*----- app's state (variables) -----*/
 
-let box = document.getElementsByClassName("block");
+//let box = document.getElementsByClassName("block");
 
 /*----- cached element references -----*/
-const sqr1 = document.getElementById('q1')
-const sqr2 = document.getElementById('q2');
-const sqr3 = document.getElementById('q3');
+var sqr1 = document.getElementById('q1')
+var sqr2 = document.getElementById('q2');
+var sqr3 = document.getElementById('q3');
 const sqr4 = document.getElementById('q4');
 const sqr5 = document.getElementById('q5');
 const sqr6 = document.getElementById('q6');
@@ -58,34 +58,40 @@ sqr9.addEventListener("click", play);
 //     }}
 
 
-    function play(){
-        if (this.className == "oplayed"){
-            return
-        }
-        if (this.className == "xplayed"){
-            return
-        }
-        turnNum += 1;
-        if (turnNum%2 == 0){
-            this.textContent = "O"
-            oArray.push(this.id)
-            this.className = "oplayed"
-        }
-        if (turnNum%2 == 1){
-            this.textContent = "X"
-            xArray.push(this.id)
-            this.className = "xplayed"
-        }
+function play(){
+    if (this.className == "oplayed"){
+        return
+    }
+    if (this.className == "xplayed"){
+        return
+    }
+    turnNum += 1;
+    if (turnNum%2 == 0){
+        this.textContent = "O"
+        oArray.push(this.id)
+        this.className = "oplayed"
+    }
+    if (turnNum%2 == 1){
+        this.textContent = "X"
+        xArray.push(this.id)
+        this.className = "xplayed"
+    }
             
-            return;
+        return;
+    }
 
+
+    function checkWin(){
+        if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
+            alert('Congrats! You guessed the word!')
         }
+    }
 
-
-        function checkWin(){
-            if(sqr1.textContent("X") == sqr2.textContent("X") == sqr3.textContent("X"))  {
-                messageEl.textContent = 'Congrats! You guessed the word!'
-            }
+        // function checkWin(){
+        //     if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
+        //         messageEl.textContent = 'Congrats! You guessed the word!'
+        //     }
+        // }
             // else if (
             //   sqr4.textContent === "X" &&
             //   sqr5.textContent === "X" &&
@@ -102,7 +108,7 @@ sqr9.addEventListener("click", play);
             // }
             // return;
 
-          }
+          
 
 
 
