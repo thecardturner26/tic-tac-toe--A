@@ -1,6 +1,4 @@
 /*----- constants -----*/
-//let player1 = "X";
-//let player2 = "O";
 
 var turnNum = 0;
 //var movesMade = 0;
@@ -12,7 +10,6 @@ let oArray = [];
 //var box = document.getElementsByClassName('.block');
 /*----- app's state (variables) -----*/
 
-//let box = document.getElementsByClassName("block");
 
 /*----- cached element references -----*/
 const sqr1 = document.getElementById('q1')
@@ -32,7 +29,6 @@ var oreset = document.getElementsByClassName('oplayed');
 
 /*----- event listeners -----*/
 
-/////
 sqr1.addEventListener("click", play);
 sqr2.addEventListener("click", play);
 sqr3.addEventListener("click", play);
@@ -43,21 +39,9 @@ sqr7.addEventListener("click", play);
 sqr8.addEventListener("click", play);
 sqr9.addEventListener("click", play);
 
-
-
-
-
 /*----- functions -----*/
-// function checkForWinner() {
-//     //need at least four moves to check for a winner
-//     if (movesMade > 4) {
-//         var sqr = $('.square');
-//         //research why we need call here!
-//         var moves = Array.prototype.slice.call($(".square"));
-//         var results = moves.map(function(square) { return square.innerHTML; });
-//     }}
 
-
+              
 function play(){
     if (this.className == "oplayed"){
         return
@@ -76,122 +60,80 @@ function play(){
         xArray.push(this.id)
         this.className = "xplayed"
     }
-        checkWin()  
-        checkWinO()  
+    checkWin()  
+    checkWinO()  
+    return;
+}
+                         
+                        
+function checkWinO(){
+    if (sqr1.textContent === "O" && 
+    sqr2.textContent === "O" && 
+    sqr3.textContent === "O")  {
+        alert('Win')
+    }
+                            
+    else if (
+        sqr4.textContent === "O" &&
+        sqr5.textContent === "O" &&
+        sqr6.textContent === "O"
+        )  {
+            alert("Win")
+        }
+    else if (
+        sqr7.textContent === "O" &&
+        sqr8.textContent === "O" &&
+        sqr9.textContent === "O"
+        )  {
+            alert("Win")
+        }
         return;
     }
-
-    // function checkWin(){
-    //     if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
-    //         alert('Congrats! You guessed the word!')
-    //     }
-    // }
-    
-
-        function checkWin(){
-            if (sqr1.textContent === "X" && 
-            sqr2.textContent === "X" && 
-            sqr3.textContent === "X")  {
-                alert('Win')
-            }
-        
-            else if (
-              sqr4.textContent === "X" &&
-              sqr5.textContent === "X" &&
-              sqr6.textContent === "X"
-            )  {
-                alert("Win")
-            }
-             else if (
-              sqr7.textContent === "X" &&
-              sqr8.textContent === "X" &&
-              sqr9.textContent === "X"
-            )  {
-                alert("Win")
-            }
-            checkWinO()
-            return;
-        }
-          
-
-        function checkWinO(){
-            if (sqr1.textContent === "O" && 
-            sqr2.textContent === "O" && 
-            sqr3.textContent === "O")  {
-                alert('Win')
-            }
-        
-            else if (
-              sqr4.textContent === "O" &&
-              sqr5.textContent === "O" &&
-              sqr6.textContent === "O"
-            )  {
-                alert("Win")
-            }
-             else if (
-              sqr7.textContent === "O" &&
-              sqr8.textContent === "O" &&
-              sqr9.textContent === "O"
-            )  {
-                alert("Win")
-            }
-            return;
-        }
-
-
-        function replay(){
-
-        }
-
-
-
-
-
-
-
-
+                                
+                                         
 ////////////////////////////////////////////////////
-
-// function checkForWinner() {
-//     //need at least four moves to check for a winner
-//     if (movesMade > 4) {
-//         var sqr = $('.square');
-//         //research why we need call here!
-//         var moves = Array.prototype.slice.call($(".sqr"));
-//         var results = moves.map(function(square) { return square.innerHTML; });
-//     }}
-
-
-
-
+                                
+    // function checkForWinner() {
+        //     //need at least four moves to check for a winner
+        //     if (movesMade > 4) {
+            //         var sqr = $('.square');
+            //         //research why we need call here!
+            //         var moves = Array.prototype.slice.call($(".sqr"));
+            //         var results = moves.map(function(square) { return square.innerHTML; });
+            //     }}
+                                        
+                                        
+                                        
+                                        
 // function checkWin(){
-//     if
-//     (sqr1.textContent === "X" &&
-//       sqr2.textContent === "X" &&
-//       sqr3.textContent === "X")  {
-//         alert("Win")
-//     }
-//     else if (
-//       sqr4.textContent === "X" &&
-//       sqr5.textContent === "X" &&
-//       sqr6.textContent === "X"
-//     )  {
-//         alert("Win")
-//     }
-//      else if (
-//       sqr7.textContent === "X" &&
-//       sqr8.textContent === "X" &&
-//       sqr9.textContent === "X"
-//     )  {
-//         alert("Win")
-//     }
-//     return;
-
-//   }
-
-
-
-
+    //     if
+    //     (sqr1.textContent === "X" &&
+    //       sqr2.textContent === "X" &&
+    //       sqr3.textContent === "X")  {
+    //         alert("Win")
+    //     }
+    //     else if (
+        //       sqr4.textContent === "X" &&
+        //       sqr5.textContent === "X" &&
+        //       sqr6.textContent === "X"
+        //     )  {
+            //         alert("Win")
+            //     }
+            //      else if (
+                //       sqr7.textContent === "X" &&
+                //       sqr8.textContent === "X" &&
+                //       sqr9.textContent === "X"
+                //     )  {
+                    //         alert("Win")
+                    //     }
+                    //     return;
+                                                                
+                    //   }
+                                                                
+                                                                
+                                                                
+                                                                
+//let box = document.getElementsByClassName("block");
 
 
 
@@ -212,3 +154,20 @@ function play(){
         
 //     }
 // }
+
+
+// function checkWin(){
+//     if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
+//         alert('Congrats! You guessed the word!')
+ //     }
+// }
+
+
+// function checkForWinner() {
+    //     //need at least four moves to check for a winner
+    //     if (movesMade > 4) {
+        //         var sqr = $('.square');
+        //         //research why we need call here!
+        //         var moves = Array.prototype.slice.call($(".square"));
+        //         var results = moves.map(function(square) { return square.innerHTML; });
+        //     }}
