@@ -15,9 +15,9 @@ let oArray = [];
 //let box = document.getElementsByClassName("block");
 
 /*----- cached element references -----*/
-var sqr1 = document.getElementById('q1')
-var sqr2 = document.getElementById('q2');
-var sqr3 = document.getElementById('q3');
+const sqr1 = document.getElementById('q1')
+const sqr2 = document.getElementById('q2');
+const sqr3 = document.getElementById('q3');
 const sqr4 = document.getElementById('q4');
 const sqr5 = document.getElementById('q5');
 const sqr6 = document.getElementById('q6');
@@ -76,41 +76,66 @@ function play(){
         xArray.push(this.id)
         this.className = "xplayed"
     }
-            
+        checkWin()  
+        checkWinO()  
         return;
     }
 
+    // function checkWin(){
+    //     if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
+    //         alert('Congrats! You guessed the word!')
+    //     }
+    // }
+    
 
-    function checkWin(){
-        if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
-            alert('Congrats! You guessed the word!')
+        function checkWin(){
+            if (sqr1.textContent === "X" && 
+            sqr2.textContent === "X" && 
+            sqr3.textContent === "X")  {
+                alert('Win')
+            }
+        
+            else if (
+              sqr4.textContent === "X" &&
+              sqr5.textContent === "X" &&
+              sqr6.textContent === "X"
+            )  {
+                alert("Win")
+            }
+             else if (
+              sqr7.textContent === "X" &&
+              sqr8.textContent === "X" &&
+              sqr9.textContent === "X"
+            )  {
+                alert("Win")
+            }
+            return;
         }
-    }
-
-        // function checkWin(){
-        //     if (sqr1.textContent === "X" && sqr2.textContent === "X" && sqr3.textContent === "X")  {
-        //         messageEl.textContent = 'Congrats! You guessed the word!'
-        //     }
-        // }
-            // else if (
-            //   sqr4.textContent === "X" &&
-            //   sqr5.textContent === "X" &&
-            //   sqr6.textContent === "X"
-            // )  {
-            //     alert("Win")
-            // }
-            //  else if (
-            //   sqr7.textContent === "X" &&
-            //   sqr8.textContent === "X" &&
-            //   sqr9.textContent === "X"
-            // )  {
-            //     alert("Win")
-            // }
-            // return;
-
           
 
-
+        function checkWinO(){
+            if (sqr1.textContent === "O" && 
+            sqr2.textContent === "O" && 
+            sqr3.textContent === "O")  {
+                alert('Win')
+            }
+        
+            else if (
+              sqr4.textContent === "O" &&
+              sqr5.textContent === "O" &&
+              sqr6.textContent === "O"
+            )  {
+                alert("Win")
+            }
+             else if (
+              sqr7.textContent === "O" &&
+              sqr8.textContent === "O" &&
+              sqr9.textContent === "O"
+            )  {
+                alert("Win")
+            }
+            return;
+        }
 
 
 
