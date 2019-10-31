@@ -109,6 +109,7 @@ function play(){
             )  {
                 alert("Win")
             }
+            checkWinO()
             return;
         }
           
@@ -138,7 +139,9 @@ function play(){
         }
 
 
+        function replay(){
 
+        }
 
 
 
