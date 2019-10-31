@@ -1,5 +1,4 @@
-
-
+/* /////////tags//////// */
 header {
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
@@ -11,7 +10,6 @@ header {
 body {
     background-color: #5C6BC0;
 }
-
 
 section {
   align-items: center;
@@ -30,6 +28,8 @@ td {
     height: 100px;
     text-align: center;
   }
+
+/* ///////classes//////// */
 
 .middle_block {
     border-left: 2px solid blueviolet;
