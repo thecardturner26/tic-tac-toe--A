@@ -64,7 +64,29 @@ function play(){
     checkWinO()  
     return;
 }
-                         
+function checkWin(){
+    if (sqr1.textContent === "X" && 
+    sqr2.textContent === "X" && 
+    sqr3.textContent === "X")  {
+        alert('Win')
+    }
+
+    else if (
+      sqr4.textContent === "X" &&
+      sqr5.textContent === "X" &&
+      sqr6.textContent === "X"
+    )  {
+        alert("Win")
+    }
+     else if (
+      sqr7.textContent === "X" &&
+      sqr8.textContent === "X" &&
+      sqr9.textContent === "X"
+    )  {
+        alert("Win")
+    }
+    return;
+}                         
                         
 function checkWinO(){
     if (sqr1.textContent === "O" && 
